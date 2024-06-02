@@ -7,7 +7,9 @@
     "test": "npm lint",
     "lint": "eslint .",
     "start": "node index.js",
-    "dev": "IS_TESTNET=TRUE node index.js"
+    "dev": "IS_TESTNET=TRUE node index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,8 @@
     "firebase-admin": "^8.8.0",
     "secp256k1": "^3.7.1",
     "uuid": "^3.2.1",
-    "web3": "^1.0.0-beta.35"
-  }
+    "web3": "^1.0.0-beta.35",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
